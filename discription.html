@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Tourist places of Narsinghpur and Jabalpur</title>
+    <style>
+        main {
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 12px 15px 40px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 6px;
+        }
+
+        .places-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .place {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+        }
+
+        .place-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            background: #4a90e2;
+            color: white;
+            padding: 10px 15px;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .location-pin {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/e/e4/Google_Maps_pin.svg') no-repeat center center;
+            background-size: contain;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 220px;
+            display: none;
+            /* Initially hidden */
+        }
+    
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+       
+        }
+        .map-button-container {
+            padding: 10px 15px;
+            background: #f5f7fa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+
+        .show-map-button:hover {
+            background: #2c029e;
+        }
+
+
+        @media (max-height: 600px) {
+            main {
+                max-height: 550px;
+                overflow-y: auto;
+            }
+        }
+
+
+        @media (max-width: 350px) {
+            body {
+                font-size: 14px;
+            }
+
+            header {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header><b><u>Tourist Places of Narsinghpur and Jabalpur</u></b></header>
+    <main>
+
+        <section>
+            <h2>Tourist Places of Narsinghpur</h2>
+            <div class="places-list">                <div class="place" id="place-dada Maharaj">
+                    <div class="place-title"><span class="location-pin" aria-label="Location"></span> Dada Maharaj Temple, Narsinghpur</div>
+                    <div class="image-container">
+                        <img src="M1.jpeg"  
+                            alt="Dada Maharaj Temple, Narsinghpur" />
+                    </div>
+                    <div class="description">
+                        <p>दादा महाराज मंदिर, मध्यप्रदेश के नरसिंहपुर जिले में स्थित एक प्रसिद्ध धार्मिक स्थल है। यह मंदिर संत दादा महाराज के नाम पर बना है, जो एक सिद्ध पुरुष और महान संत माने जाते हैं। कहा जाता है कि उन्होंने अपने तप और साधना से लोगों की समस्याओं को दूर किया और चमत्कारिक रूप से कई लोगों की मदद की। यह मंदिर इसलिए प्रसिद्ध है क्योंकि यहां भक्तों की मनोकामनाएं पूरी होने की मान्यता है। खासतौर पर गुरुपूर्णिमा और मेला आयोजनों में हजारों श्रद्धालु यहाँ दर्शन करने आते हैं। मंदिर का वातावरण अत्यंत शांत, भक्तिमय और श्रद्धा से भरपूर होता है।</p>
+                    </div>
+
+                    <div class="map-container" id="map-Dada Maharaj">
+                    </div>
+                </div>
+
+       <button class="action-button"onclick="window.open('https://youtu.be/ywn7gKK7YKw?si=TrtmG79jjdi8IzdU')">अधिक जानें</button>
+               
+               
+                
+                <!-- <div class="image-container">
+                    <video width="100%" height="180px" controls autoplay loop muted>
+                        <source src="img/v1.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                // ... existing code ... -->
+
+
+
+
+
+
+
+
+                <div class="place" id="place-ram mandir ">
+                    <div class="place-title"><span class="location-pin" aria-label="Location"></span> Ram Mandir,Narsinghpur</div>
+                    <div class="image-container">
+                        <img src="M2.jpg"
+                            alt="Ram Mandir,Narsinghpur" />
+                    </div>
+                    <div class="description">
+                        <p>राम मंदिर, नरसिंहपुर जिले का एक प्रमुख धार्मिक स्थल है, जो भगवान श्रीराम को समर्पित है। यह मंदिर प्राचीन काल से आस्था का केंद्र रहा है और स्थानीय लोगों के लिए एक पवित्र स्थान माना जाता है। इस मंदिर का इतिहास जुड़ा है श्रद्धा, भक्ति और सांस्कृतिक विरासत से। मंदिर में श्रीराम के साथ माता सीता, लक्ष्मण और हनुमान जी की मूर्तियाँ स्थापित हैं। यहाँ नियमित पूजा-अर्चना होती है और त्योहारों पर विशेष आयोजन किए जाते हैं।</p>
+                    </div>
+
+                </div>
+            <!-- </div> -->
+             <button class="action-button" onclick="window.open('https://youtu.be/O8gU9vbEvR8?si=rVPqhN8CtIeKxryR')">अधिक जानें</button>
+            <div class="place" id="place-Osho Ashram">
+                <div class="place-title"><span class="location-pin" aria-label="Location"></span>Osho Ashram,
+                    Narsinghpur</div>
+                <div class="image-container">
+                    <img src="M3.jpeg"
+                        alt="Osho Ashram, Narsinghpur" />
+                </div>
+                <div class="description">
+                    <p>ओशो आश्रम मध्यप्रदेश के नरसिंहपुर जिले के गाडरवारा नगर में स्थित है, जो विश्वप्रसिद्ध आध्यात्मिक गुरु आचार्य रजनीश 'ओशो' का जन्मस्थान है। ओशो ने ध्यान, प्रेम, स्वतंत्रता और चेतना को जीवन का आधार बताया और अपने विचारों से संपूर्ण विश्व को प्रभावित किया। यह आश्रम ओशो के जीवन, उनके विचारों और ध्यान की परंपरा को समर्पित है। यहाँ नियमित रूप से ध्यान शिविर, प्रवचन, तथा आध्यात्मिक साधनाएँ आयोजित की जाती हैं। देश-विदेश से श्रद्धालु और अनुयायी यहां आत्मिक शांति की खोज में आते हैं।</p>
+                </div>
+
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/Kz73w-IDGmg?si=k02rAem5q6jhozx_')">अधिक जानें</button>
+            <!-- </div> -->
+
+            <div class="place" id="place-Chaugan Fort">
+                <div class="place-title"><span class="location-pin" aria-label="Location"></span> Chaugan Fort,gadarwara</div>
+                <div class="image-container">
+                    <img src="m4.jpeg"
+                        alt="Chaugan Fort" />
+                </div>
+                <div class="description">
+                    <p>चौगान किला मध्यप्रदेश के नरसिंहपुर जिले के गाडरवारा नगर के पास स्थित एक ऐतिहासिक धरोहर है। यह किला प्राचीन काल की स्थापत्य कला, सुरक्षा व्यवस्था और राजनैतिक महत्त्व को दर्शाता है। माना जाता है कि यह किला क्षेत्रीय शासकों द्वारा अपने सामरिक और प्रशासनिक कार्यों के लिए बनवाया गया था। यह किला चारों ओर से मजबूत दीवारों और ऊँचाई पर स्थित होने के कारण रणनीतिक दृष्टि से बेहद महत्वपूर्ण था। इसकी बनावट से यह अंदाज़ा लगाया जा सकता है कि यह किसी समय में एक प्रमुख प्रशासनिक या सैन्य केंद्र रहा होगा।</p>
+                </div>
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/e4g77C9nF10?si=yIiwarjvP8WdiqCo')">अधिक जानें</button>
+            <!-- </div> -->
+
+            <div class="place" id="place-Shiv Temple,Graru">
+                <div class="place-title"><span class="location-pin" aria-label="Location"></span> Shiv Temple,Graru
+                </div>
+                <div class="image-container">
+                    <img src="m5.webp"
+                        alt="Shiv Temple,Graru" />
+                </div>
+                <div class="description">
+                    <p>शिव मंदिर, मध्यप्रदेश के नरसिंहपुर जिले के ग्रारू गाँव में स्थित एक प्राचीन एवं श्रद्धा से परिपूर्ण धार्मिक स्थल है। यह मंदिर भगवान शिव को समर्पित है और यहां विराजित प्राचीन शिवलिंग को जाग्रत तथा चमत्कारी माना जाता है  इस मंदिर का ऐतिहासिक महत्व स्थानीय जनमानस की गहरी आस्था से जुड़ा हुआ है। वर्षों से लोग यहाँ अपनी मनोकामनाएं लेकर आते हैं और विश्वास है कि सच्चे मन से की गई पूजा अवश्य फल देती है।</p>
+                </div>
+
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/sHCvMm07BgE?si=HnS7IZplbzZw5AkK')">अधिक जानें</button>
+  
+            <!-- </div> -->
+
+            <div class="place" id="place-Tongat Waterfall">
+                <div class="place-title"><span class="location-pin" aria-label="location"></span>Tonghat Waterfall
+                    </div>
+                <div class="image-container">
+                    <img src="M6.jpeg"
+                        alt="Tonghat Waterfall" />
+                </div>
+                <div class="description">
+                    <p>टोंघाट जलप्रपात मध्यप्रदेश के नरसिंहपुर जिले में स्थित एक सुंदर और प्राकृतिक जलप्रपात है। यह झरना पहाड़ियों और घने जंगलों के बीच स्थित है, जो इसे एक शांत, मनमोहक और दर्शनीय स्थल बनाता है। टोंघाट जलप्रपात विशेष रूप से मानसून के मौसम में अत्यंत आकर्षक रूप में बहता है, जब यहां का वातावरण हरियाली और ठंडी फुहारों से भर जाता है।</p>
+                </div>
+
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/PKapd5BnA7o?si=oi5B1072_mMfzZsn')">अधिक जानें</button>
+  
+            <!-- </div> -->
+
+            <div class="place" id="Narsih Temple ,Narsinghpur">
+                <div class="place-title"><span class="location-pin" aria-label="location"></span>Narsih Temple ,Narsinghpur</div>
+                <div class="image-container">
+                    <img src="m7.jpg"
+                        alt="Narsih Temple ,Narsinghpur" />
+                </div>
+                <div class="description">
+                    <p>नरसिंह मंदिर मध्यप्रदेश के नरसिंहपुर जिले का एक प्रसिद्ध और ऐतिहासिक धार्मिक स्थल है। यह मंदिर भगवान नरसिंह (भगवान विष्णु के उग्र अवतार) को समर्पित है। कहा जाता है कि इस मंदिर से ही जिले का नाम "नरसिंहपुर" पड़ा है, जिससे इसकी धार्मिक और सांस्कृतिक महत्ता सिद्ध होती है। यह मंदिर प्राचीन काल से श्रद्धालुओं की आस्था का केंद्र रहा है। मंदिर की वास्तुकला, नक्काशी और शांत वातावरण इसे और भी आकर्षक बनाते हैं। यहाँ प्रति वर्ष नरसिंह जयंती पर विशेष आयोजन और मेला लगता है, जिसमें दूर-दूर से भक्तगण शामिल होते हैं।</p>
+                </div>
+
+            </div>
+            <button class="action-button" onclick="window.open('https: //youtu.be/E-zeC9Nd4bA?si=gmdwYgsS3qQiztRm')">अधिक जानें</button>
+  
+            <!-- </div> -->
+
+            <div class="place" id="Barman Ghat">
+                <div class="place-title"><span class="location-pin" aria-label="स्थान"></span>Barman Ghat</div>
+                <div class="image-container">
+                    <img src="m8.jpeg"
+                        alt="Barman Ghat" />
+                </div>
+                <div class="description">
+                    <p>बर्मन घाट मध्यप्रदेश के नरसिंहपुर जिले में स्थित एक ऐतिहासिक, धार्मिक और प्राकृतिक दृष्टि से अत्यंत महत्वपूर्ण स्थल है। यह घाट नर्मदा नदी के किनारे बसा हुआ है और वर्षों से आस्था, आध्यात्म और सांस्कृतिक आयोजनों का केंद्र रहा है। यहां प्रतिवर्ष माघ महीने में विशाल मेला (बर्मन मेला) आयोजित होता है, जिसमें लाखों श्रद्धालु पवित्र नर्मदा स्नान के लिए आते हैं। मान्यता है कि यहाँ स्नान करने से पापों का नाश होता है और मोक्ष की प्राप्ति होती है।</p>
+                </div>
+
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/GD-D1aejhE4?si=X92eqqKwVZYahlHU')">अधिक जानें</button>
+  
+            <!-- </div> -->
+
+            <div class="place" id="place-rani-durgawati-fort">
+                <div class="place-title"><span class="location-pin" aria-label="Location"></span>Jhoteshwar temple</div>
+                <div class="image-container">
+                    <img src="M9.jpeg"
+                        alt="Jhoteshwar temple" />
+
+
+                </div>
+                <div class="description">
+                    <p>मध्य प्रदेश राज्य में दिव्य  झोतेश्वर मंदिर स्थित है। यह मंदिर भक्तों और तीर्थयात्रियों के लिए एक अद्भुत अनुभव प्रदान करता है। यह पवित्र और सम्मानित मंदिर राज-राजेश्वरी तिपुर सुंदरी देवी को समर्पित है। यह मध्य प्रदेश के नरसिंहपुर जिले में स्थित है। इसे एक सम्मानित गुरु, शंकराचार्य की अंतिम विश्राम स्थली के रूप में भी जाना जाता है। यह मंदिर सफेद संगमरमर से बना है, और इस खूबसूरत सफेद संरचना को परमहंस गंगा आश्रम के नाम से भी जाना जाता है। मध्य प्रदेश में यह भव्य मंदिर 225 फीट ऊँचा है और इसे पूरा करने में लगभग 17 वर्ष लगे।</p>
+                </div>
+
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/IFCTGLBE2Oo?si=SE4MDzSpv-7nt1Nz')">अधिक जानें</button>
+  
+            <!-- </div> -->
+
+            <div class="place" id="place-rani-durgawati-fort">
+                <div class="place-title"><span class="location-pin" aria-label="Location"></span> Rani Durgavati
+                    Fort</div>
+                <div class="image-container">
+                    <img src="m10.jpeg"
+                        alt="Rani Durgavati Fort" />
+
+
+                </div>
+                <div class="description">
+                    <p>रानी दुर्गावती किला जबलपुर के निकट स्थित एक ऐतिहासिक किला है जो 16वीं शताब्दी में गोंडवाना साम्राज्य की वीर रानी दुर्गावती द्वारा बनवाया गया था। यह किला अपनी सामरिक महत्ता और वास्तुकला के लिए प्रसिद्ध है। रानी दुर्गावती ने मुगल सेना के खिलाफ इसी किले से युद्ध का नेतृत्व किया था। आज यह किला पर्यटकों के लिए एक महत्वपूर्ण ऐतिहासिक स्थल है और यहाँ से जबलपुर शहर का मनोरम दृश्य दिखाई देता है।</p>
+                </div>
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/bdcMOzJslHw?si=V8O-yb4edgvgTHtD')">अधिक जानें</button>
+  
+
+            <!-- </div> -->
+        </section>
+
+        <section>
+            <h2>Tourist Places of Jabalpur</h2>
+            <div class="places-list">
+
+               
+
+            <div class="place" id="place-bhedaghat-marble-rocks">
+                <div class="place-title"><span class="location-pin" aria-label="location"></span>
+                    Bhedaghat Marble Rocks</div>
+                <div class="image-container">
+                    <img src="J1.jpeg"
+                        alt="Bilaspur Rocks" />
+                </div>
+                <div class="description">
+                    <p>भेड़ाघाट संगमरमर चट्टानें जबलपुर का एक प्रसिद्ध पर्यटन स्थल है जहाँ नर्मदा नदी संगमरमर की
+                        चट्टानों के बीच से बहती है। यहाँ की चट्टानें 100 फीट तक ऊँची हैं और चाँदनी रात में इनका नज़ारा
+                        बेहद खूबसूरत होता है।</p>
+                </div>
+
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/8_kmf0lqHD4?si=NZon99kB4eTvhAIt')">अधिक जानें</button>
+  
+            <!-- </div> -->
+
+            
+
+            <div class="place" id="place-dumna-nature-reserve">
+                <div class="place-title"><span class="location-pin" aria-label="location"></span> Dumna Nature Reserve
+                    (Dumna Nature Reserve)</div>
+                <div class="image-container">
+                    <img src="J2.jpeg"
+                        alt="Dumna Nature Reserve" />
+                </div>
+                <div class="description">
+                    <p>डुमना नेचर रिजर्व जबलपुर का एक प्रसिद्ध वन्यजीव अभयारण्य है जो 1058 हेक्टेयर क्षेत्र में फैला हुआ
+                        है। यहाँ विभिन्न प्रकार के वन्यजीव जैसे चीतल, सांभर, नीलगाय और विभिन्न पक्षी प्रजातियाँ पाई जाती
+                        हैं। यह स्थान प्रकृति प्रेमियों और फोटोग्राफरों के लिए एक आदर्श स्थान है।</p>
+                </div>
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/VwJ22Sp-uCs?si=8f_OPhDWphOqKGPS')">अधिक जानें</button>
+  
+
+           
+
+           
+              <div class="place" id="place-tilwara-tribal-market">
+                    <div class="place-title"><span class="location-pin" aria-label="location"></span>Tilwara Tribal
+                        Market(Tilwara Tribal Market)</div>
+                    <div class="image-container">
+                        <img src="J3.jpeg"
+                            alt="Tilwara Tribal Market" />
+                    </div>
+                    <div class="description">
+                        <p>जबलपुर का तिलवारा घाट अपनी ऐतिहासिक और धार्मिक महत्व के कारण प्रसिद्ध है। यह स्थान मकर संक्रांति मेले के लिए जाना जाता है, जो 1100 साल से भी पुरानी परंपरा है, और यहाँ तिल व खिचड़ी चढ़ाने और नर्मदा नदी में पवित्र डुबकी लगाने की परंपरा है। </p>
+                    </div>
+                </div>
+                <button class="action-button" onclick="window.open('https://youtu.be/CATKOosmaWs?si=MQyEwf33xKVWXA2x')">अधिक जानें</button>
+  
+
+                
+                <div class="place" id="place-balancing-rock">
+                    <div class="place-title"><span class="location-pin" aria-label="location"></span>balancing rock
+                        (Balancing Rock)</div>
+                    <div class="image-container">
+                        <img src="J4.jpeg" alt="balancing rock" />
+                    </div>
+                    <div class="description">
+                        <p>बैलेंसिंग रॉक जबलपुर का एक प्राकृतिक आश्चर्य है जहाँ एक विशाल चट्टान संतुलन बनाए हुए खड़ी है। यह चट्टान अपने अद्भुत संतुलन के लिए प्रसिद्ध है जो प्रकृति की अद्वितीय कला को दर्शाता है। यह स्थान पर्यटकों और भूवैज्ञानिकों दोनों के लिए समान रूप से आकर्षक है।</p>
+                    </div>
+                </div>
+                <button class="action-button" onclick="window.open('https://youtu.be/pQY29O1e9Bk?si=CltYO1KDh7SnmLDw')">अधिक जानें</button>
+  
+
+                <div class="place" id="place-dhuandhar-falls">
+                    <div class="place-title"><span class="location-pin" aria-label="location"></span> dhuaan dhaar
+                        jalaprapaat (Dhuandhar Falls)</div>
+                        <div class="image-container">
+                        <img src="J5.jpeg" alt="dhuaan dhaar jalaprapaat" />
+                        </div>
+                      <p>धुआंधार जलप्रपात मध्य प्रदेश के जबलपुर जिले में स्थित एक प्रसिद्ध झरना है जो नर्मदा नदी पर बना हुआ है। यह झरना लगभग 10 मीटर की ऊँचाई से गिरता है और अपने धुएँ जैसे प्रभाव के कारण इसका नाम धुआंधार पड़ा। यह पर्यटकों के लिए एक लोकप्रिय स्थान है जहाँ नाव की सवारी का आनंद भी लिया जा सकता है।</p>
+            
+                    </div>
+                <!-- </div> -->
+                <button class="action-button" onclick="window.open('https://youtu.be/OmcNpZOQicQ?si=D_vmul95PZq0YN5h')">अधिक जानें</button>
+  
+
+                <div class="place" id="place-kachnar-city">
+                    <div class="place-title"><span class="location-pin" aria-label="location"></span> Kachnar City
+                        (Kachnar City Garden)</div>
+                    <div class="image-container">
+                        <img src="J6.jpeg" alt="Kachnar City" />
+
+                    </div>
+                    <div class="description">
+                        कचनार सिटी मुख्य रूप से कचनार सिटी शिव मंदिर के लिए प्रसिद्ध है। यह मंदिर भगवान शिव की 76 फीट ऊंची विशाल प्रतिमा के लिए जाना जाता है, जो मध्य प्रदेश की सबसे ऊंची प्रतिमा मानी जाती है. 
+                    </div>
+                </div>
+                <button class="action-button" onclick="window.open('https://youtu.be/mrSorebqbk4?si=3srAQQug9kCM25RI')">अधिक जानें</button>
+  
+
+              
+            <div class="place" id="place-Kankali Devi Temple">
+                <div class="place-title"><span class="location-pin" aria-label="location"></span>Kankali Devi Temple</div>
+                <div class="image-container">
+                    <img src="J7.jpg"
+                        alt="Kankali Devi Temple" />
+                </div>
+                <div class="description">
+                    <p>जबलपुर के पास तिगावा बस्ती में स्थित इस मंदिर को तिगावा मंदिर के नाम से भी जाना जाता है। मंदिर, जिसे कंकली देवी ने समर्पित किया है, में आश्चर्यजनक वास्तुकला और एक अद्भुत गर्भगृह है। इसके अलावा, एक अच्छी तरह से परिभाषित खंभों वाले निर्माण के साथ एक दिलचस्प मंदिर है। मंदिर के अंदर नरसिंह, शेषशाय विष्णु और चामुंडा देवी की मूर्तियां हैं।</p>
+                </div>
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/QJ0-BFlPoTM?si=GQ9YR1LtmTLg2N-0')">अधिक जानें</button>
+  
+
+
+            <div class="place" id="place-Bargi Dam">
+                <div class="place-title"><span class="location-pin" aria-label="location"></span>Bargi Dam</div>
+                <div class="image-container">
+                    <img src="J8.jpg"
+                        alt="Bargi Dam" />
+                </div>
+                <div class="description">
+                    <p>मध्य प्रदेश में जबलपुर के पास नर्मदा नदी पर बरगी बांध के नाम से जाना जाने वाला एक महत्वपूर्ण बांध बनाया गया है। बांध बिजली और सिंचाई परियोजनाओं के साथ-साथ पर्यटन के स्रोत के रूप में कार्य करता है। बांध के बैकवाटर द्वारा बनाई गई झील पर नौका विहार और अन्य पानी के खेल का अभ्यास किया जाता है। स्थान पर, एक आश्चर्यजनक रिसॉर्ट बनाया गया है।
+
+                    </p>
+                </div>
+            </div>
+            <button class="action-button" onclick="window.open('https://youtu.be/fHp59sZ-dKg?si=rqWmt9ro4XFJmDtX')">अधिक जानें</button>
+  
+
+            <div class="place" id="place-Rani Durgavati Museum ">
+                <div class="place-title"><span class="location-pin" aria-label="location"></span>Rani Durgavati Museum
+                </div>
+                <div class="image-container">
+                    <img src="J9.jpeg"
+                        alt="Rani Durgavati Museum"/>
+                </div>
+                <div class="description">
+                    <p>रानी दुर्गावती नाम की एक साहसी गोंड रानी ने उन्हें अपने क्षेत्र से बाहर रखने के लिए मुगलों से लड़ाई लड़ी। इसलिए जबलपुर में आज भी हर कोई उन्हें इसी नाम से याद करता है। रानी दुर्गावती संग्रहालय की स्थापना उनके द्वारा किए गए बहादुर कार्यों के साथ-साथ उनकी शानदार और प्रभावी युद्ध रणनीति को याद करने, अध्ययन करने और उन्हें याद करने के लिए की गई थी। आपको इस सुविख्यात संग्रहालय में कुछ समय बिताना चाहिए। </p>
+                </div>
+            </div>  
+            <button class="action-button" onclick="window.open('https://youtu.be/4sP-tXoxLUI?si=K9V35M0vxhrJ5dYp')">अधिक जानें</button>
+  
+
+
+            <div class="place" id="place-Gwarighat ">
+                <div class="place-title"><span class="location-pin" aria-label="location"></span>Gwarighat
+                </div>
+                <div class="image-container">
+                    <img src="J10.jpeg"
+                        alt="Gwarighat
+                        " />
+                </div>
+                <div class="description">
+                    <p>ग्वारीघाट, जो मध्य प्रदेश के जबलपुर में नर्मदा नदी के किनारे स्थित है, अपने धार्मिक महत्व के कारण प्रसिद्ध है। यह एक हिंदू धार्मिक स्थल है, जहाँ नर्मदा नदी की पूजा की जाती है और दाह संस्कार भी किए जाते हैं। </p>
+                </div>
+            </div>  
+            <button class="action-button" onclick="window.open('https://youtu.be/E37tl6ajQRU?si=82sSpH0yDHsdwSwf')">अधिक जानें</button>
+  
+
+</body>
+</html>

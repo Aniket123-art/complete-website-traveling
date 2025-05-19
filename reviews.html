@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action = "form.php" method = "POST">
+        <fieldset>
+            <label for="name">Enter your full name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="text">message</label>
+            <input type="text" id="text" name="message" required />
+            <input type="submit" value="Submit" name="submit"/>
+        </fieldset>
+    </form>
+        <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #343232;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #09d9cf0c;
+    border: 1px solid #200c0c;
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #db6262;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #e7e8e7;
+    color: rgb(7, 1, 18);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #14e5d079;
+}
+</style>
+</body>
+</html>
+
